@@ -1,0 +1,32 @@
+name: litlum
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python version
+  - python>=3.8
+  
+  # Core dependencies
+  - pyyaml>=6.0.0
+  - requests>=2.25.0
+  - feedparser>=6.0.0
+  - python-dateutil>=2.8.0
+  - rich>=13.0.0
+  - typing-extensions>=4.0.0
+  
+  # GUI dependencies
+  - pyside6>=6.0.0
+  
+  # Build dependencies
+  - pyinstaller
+  
+  # Development dependencies
+  - pytest>=7.3.1
+  - black
+  - isort
+  - mypy
+  
+  # Pip dependencies (not available via conda or better via pip)
+  - pip
+  - pip:
+    - ollama>=0.1.0
